@@ -8,6 +8,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Separator } from "@/components/ui/separator";
 import { Heart, ShoppingCart, Star, Truck, RotateCcw, Shield, Plus, Minus } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
+import img1 from "../assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp";
+import img2 from "../assets/41r8wjxCplL._AC_UY266_FMwebp_.webp";
+import img3 from "../assets/41+Y8u4+p0L._AC_UY266_FMwebp_.webp";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -18,13 +21,13 @@ const ProductDetails = () => {
   // Mock product data
   const product = {
     id: 1,
-    title: "The Silent Patient",
-    author: "Alex Michaelides",
-    price: 24.99,
-    originalPrice: 29.99,
-    rating: 4.5,
-    reviews: 2847,
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+      title: "The Hallmarked Man: A Cormoran Strike Novel",
+      author: "Alex Michaelides",
+      price: 3000,
+      originalPrice: 4000,
+      rating: 4.5,
+      reviews: 2847,
+    images: [img1, img2, img3],
     category: "Thriller",
     formats: [
       { type: "hardcover", price: 24.99, inStock: true },
