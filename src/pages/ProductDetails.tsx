@@ -30,10 +30,10 @@ const ProductDetails = () => {
     images: [img1, img2, img3],
     category: "Thriller",
     formats: [
-      { type: "hardcover", price: 24.99, inStock: true },
-      { type: "paperback", price: 16.99, inStock: true },
-      { type: "ebook", price: 9.99, inStock: true },
-      { type: "audiobook", price: 19.99, inStock: false },
+      { type: "hardcover", price: 3000, inStock: true },
+      { type: "paperback", price: 1500, inStock: true },
+      { type: "ebook", price: 1000, inStock: true },
+      { type: "audiobook", price: 2000, inStock: false },
     ],
     description: "Alicia Berenson's life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house overlooking a park in one of London's most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word.",
     specifications: {
@@ -150,10 +150,10 @@ const ProductDetails = () => {
               </div>
               
               <div className="flex items-center space-x-3">
-                <span className="text-3xl font-bold">${selectedFormatData?.price || product.price}</span>
+                <span className="text-3xl font-bold">{selectedFormatData?.price || product.price} Tk</span>
                 {product.originalPrice && (
                   <span className="text-xl text-muted-foreground line-through">
-                    ${product.originalPrice}
+                    {product.originalPrice} Tk
                   </span>
                 )}
               </div>
@@ -184,7 +184,7 @@ const ProductDetails = () => {
                     >
                       <div className="flex justify-between items-center w-full">
                         <span className="capitalize">{format.type}</span>
-                        <span className="ml-4">${format.price}</span>
+                        <span className="ml-4">{format.price} Tk</span>
                         {!format.inStock && <span className="ml-2 text-xs">(Out of stock)</span>}
                       </div>
                     </SelectItem>
@@ -227,7 +227,7 @@ const ProductDetails = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span>Price:</span>
-                    <span className="font-semibold">${selectedFormatData?.price || product.price}</span>
+                    <span className="font-semibold">{selectedFormatData?.price || product.price} Tk</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Quantity:</span>
@@ -236,7 +236,7 @@ const ProductDetails = () => {
                   <Separator />
                   <div className="flex justify-between text-lg font-semibold">
                     <span>Total:</span>
-                    <span>${((selectedFormatData?.price || product.price) * quantity).toFixed(2)}</span>
+                    <span>{((selectedFormatData?.price || product.price) * quantity).toFixed(2)} Tk</span>
                   </div>
                 </div>
 
@@ -262,7 +262,7 @@ const ProductDetails = () => {
                 <div className="space-y-3 pt-4 border-t">
                   <div className="flex items-center space-x-3 text-sm">
                     <Truck className="h-4 w-4 text-muted-foreground" />
-                    <span>Free shipping on orders over $50</span>
+                    <span>Free shipping on orders over 5000 Tk</span>
                   </div>
                   <div className="flex items-center space-x-3 text-sm">
                     <RotateCcw className="h-4 w-4 text-muted-foreground" />
