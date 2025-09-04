@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import img1 from "../assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp";
+import img2 from "../assets/41r8wjxCplL._AC_UY266_FMwebp_.webp";
+import img3 from "../assets/41+Y8u4+p0L._AC_UY266_FMwebp_.webp";
+import img4 from "../assets/51s3qOZi-AL._AC_UY266_FMwebp_.webp";
+import img5 from "../assets/411ht3CS0SL._AC_UY266_FMwebp_.webp";
+import img6 from "../assets/41IQFfbHU9L._AC_UY266_FMwebp_.webp";
 import {
   Card,
   CardContent,
@@ -52,7 +58,7 @@ const Shop = () => {
       originalPrice: 4000,
       rating: 4.5,
       reviews: 2847,
-      image: "./src/assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp",
+      image: img1,
       category: "Thriller",
       format: "Hardcover",
       inStock: true,
@@ -65,7 +71,7 @@ const Shop = () => {
       price: 2500,
       rating: 4.8,
       reviews: 3000,
-      image: "./src/assets/41r8wjxCplL._AC_UY266_FMwebp_.webp",
+      image: img2,
       category: "Self-Help",
       format: "Paperback",
       inStock: true,
@@ -78,7 +84,7 @@ const Shop = () => {
       price: 1500,
       rating: 4.7,
       reviews: 2100,
-      image: "./src/assets/41+Y8u4+p0L._AC_UY266_FMwebp_.webp",
+      image: img3,
       category: "Fiction",
       format: "Paperback",
       inStock: false,
@@ -90,7 +96,7 @@ const Shop = () => {
       price: 2200,
       rating: 4.6,
       reviews: 3000,
-      image: "./src/assets/51s3qOZi-AL._AC_UY266_FMwebp_.webp",
+      image: img4,
       category: "Memoir",
       format: "Hardcover",
       inStock: true,
@@ -102,7 +108,7 @@ const Shop = () => {
       price: 2000,
       rating: 4.4,
       reviews: 1872,
-      image: "./src/assets/411ht3CS0SL._AC_UY266_FMwebp_.webp",
+      image: img5,
       category: "Finance",
       format: "Paperback",
       inStock: true,
@@ -114,7 +120,7 @@ const Shop = () => {
       price: 3000,
       rating: 4.9,
       reviews: 6547,
-      image: "./src/assets/41IQFfbHU9L._AC_UY266_FMwebp_.webp",
+      image: img6,
       category: "Sci-Fi",
       format: "Hardcover",
       inStock: true,
