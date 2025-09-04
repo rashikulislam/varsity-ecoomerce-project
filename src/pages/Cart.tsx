@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Trash2, Plus, Minus, ShoppingBag, ArrowRight } from "lucide-react";
+import img1 from "../assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp";
+import img2 from "../assets/41r8wjxCplL._AC_UY266_FMwebp_.webp";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([
@@ -16,7 +18,7 @@ const Cart = () => {
       price: 3000,
       quantity: 1,
       format: "Hardcover",
-      image: "./src/assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp",
+      image: img1,
       inStock: true,
     },
     {
@@ -26,7 +28,7 @@ const Cart = () => {
       price: 2500,
       quantity: 2,
       format: "Paperback",
-      image: "./src/assets/41r8wjxCplL._AC_UY266_FMwebp_.webp",
+      image: img2,
       inStock: true,
     },
   ]);

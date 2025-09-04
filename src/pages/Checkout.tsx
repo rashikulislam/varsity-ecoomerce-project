@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
+import img1 from "../assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp";
+import img2 from "../assets/41r8wjxCplL._AC_UY266_FMwebp_.webp";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { 
@@ -59,7 +61,7 @@ const Checkout = () => {
       price: 3000,
       quantity: 1,
       format: "Hardcover",
-      image: "./src/assets/51+vV+aSJOL._AC_UY266_FMwebp_.webp",
+      image: img1,
       inStock: true,
     },
     {
@@ -69,7 +71,7 @@ const Checkout = () => {
       price: 2500,
       quantity: 2,
       format: "Paperback",
-      image: "./src/assets/41r8wjxCplL._AC_UY266_FMwebp_.webp",
+      image: img2,
       inStock: true,
     },
   ];
